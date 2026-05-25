@@ -1,0 +1,172 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#000;
+  color:#F3E7DB;
+  font-family:'Inter', sans-serif;
+}
+
+.app{
+  display:flex;
+  min-height:100vh;
+}
+
+.sidebar{
+  width:260px;
+  background:#0d0d0d;
+  border-right:1px solid #1f1f1f;
+  padding:30px 20px;
+}
+
+.logo-container{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.logo-container img{
+  width:120px;
+  margin-bottom:15px;
+}
+
+.logo-container h1{
+  font-family:'Baloo 2', cursive;
+  font-size:42px;
+}
+
+nav{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#F3E7DB;
+  padding:14px;
+  border-radius:14px;
+  transition:0.3s;
+}
+
+nav a:hover,
+nav .active{
+  background:#FF4A4A;
+}
+
+.content{
+  flex:1;
+  padding:40px;
+}
+
+.topbar{
+  margin-bottom:30px;
+}
+
+.topbar h2{
+  font-size:38px;
+}
+
+.topbar p{
+  color:#777;
+  margin-top:5px;
+}
+
+.form-section{
+  background:#111;
+  border:1px solid #1f1f1f;
+  border-radius:28px;
+  padding:25px;
+  margin-bottom:30px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  margin-bottom:18px;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  background:#1a1a1a;
+  border:none;
+  outline:none;
+  padding:16px;
+  border-radius:16px;
+  color:#fff;
+  font-size:15px;
+}
+
+textarea{
+  min-height:120px;
+  resize:none;
+  margin-bottom:18px;
+}
+
+button{
+  background:#FF4A4A;
+  border:none;
+  padding:16px;
+  border-radius:16px;
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  opacity:0.8;
+}
+
+.pedidos-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:20px;
+}
+
+
+.upload-label{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:12px;
+
+  margin-bottom:20px;
+
+  color:#999;
+
+}
+
+.preview-container{
+
+  display:flex;
+
+  gap:12px;
+
+  flex-wrap:wrap;
+
+  margin-bottom:20px;
+
+}
+
+.preview-container img{
+
+  width:100px;
+
+  height:100px;
+
+  object-fit:cover;
+
+  border-radius:16px;
+
+  border:1px solid #1f1f1f;
+
+}

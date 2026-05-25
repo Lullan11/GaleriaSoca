@@ -1,0 +1,228 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#000;
+  font-family:'Inter', sans-serif;
+  color:#F3E7DB;
+}
+
+.login-container{
+  width:100%;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+}
+
+.login-card{
+  width:100%;
+  max-width:420px;
+
+  background:#111;
+
+  border:1px solid #1f1f1f;
+
+  border-radius:30px;
+
+  padding:40px;
+
+  text-align:center;
+}
+
+.login-card img{
+  width:140px;
+  margin-bottom:20px;
+}
+
+.login-card h1{
+  font-family:'Baloo 2', cursive;
+  font-size:48px;
+}
+
+.login-card p{
+  color:#999;
+  margin-bottom:35px;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+input{
+  background:#1a1a1a;
+  border:none;
+  outline:none;
+
+  padding:16px;
+
+  border-radius:16px;
+
+  color:#fff;
+
+  font-size:15px;
+}
+
+button{
+  background:#FF4A4A;
+  border:none;
+
+  padding:16px;
+
+  border-radius:16px;
+
+  color:white;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+button:hover{
+  opacity:0.8;
+}
+.message{
+
+  margin-top:10px;
+
+  padding:14px;
+
+  border-radius:14px;
+
+  font-size:14px;
+
+  display:none;
+
+}
+
+.message.error{
+  background:#2a1212;
+  color:#ff7b7b;
+  border:1px solid #ff4a4a;
+}
+
+.message.success{
+  background:#102417;
+  color:#8fffaa;
+  border:1px solid #54D437;
+}
+
+.recover-link{
+
+  margin-top:18px;
+
+  display:block;
+
+  color:#888;
+
+  text-decoration:none;
+
+  font-size:14px;
+
+  transition:0.3s;
+}
+
+.recover-link:hover{
+  color:#F3E7DB;
+}
+
+
+
+
+.soca-title{
+
+  font-family:'Baloo 2', cursive;
+
+  font-size:52px;
+
+  margin-bottom:10px;
+
+}
+
+.back-button{
+
+  margin-top:18px;
+
+  display:none;
+
+  width:100%;
+
+  text-align:center;
+
+  background:#1a1a1a;
+
+  border:1px solid #2c2c2c;
+
+  padding:15px;
+
+  border-radius:16px;
+
+  color:#F3E7DB;
+
+  text-decoration:none;
+
+  transition:0.3s;
+
+}
+
+.back-button:hover{
+
+  background:#222;
+
+}
+
+
+.password-container{
+
+  position:relative;
+
+  width:100%;
+
+}
+
+.password-container input{
+
+  width:100%;
+
+  padding-right:55px;
+
+}
+
+#togglePassword{
+
+  position:absolute;
+
+  right:18px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+
+  cursor:pointer;
+
+  font-size:18px;
+
+  color:#888;
+
+  transition:0.3s;
+
+  user-select:none;
+
+}
+
+#togglePassword:hover{
+
+  color:#F3E7DB;
+
+}

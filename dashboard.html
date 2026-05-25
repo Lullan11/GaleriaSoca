@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOCA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <div class="logo-container">
+                <img src="./assets/logo.png" alt="SOCA">
+                <h1>SOCA</h1>
+                <p>Galería de Arte</p>
+            </div>
+
+            <nav>
+                <a href="#">Dashboard</a>
+                <a href="#">Pedidos</a>
+                <a href="#">Usuarios</a>
+            </nav>
+
+        </aside>
+
+        <main class="content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h2>Dashboard</h2>
+
+                    <p id="userName"></p>
+
+                </div>
+
+                <button id="logoutBtn">
+                    Cerrar sesión
+                </button>
+
+            </header>
+
+            <section class="cards">
+
+                <div class="card">
+                    <h3>Pedidos activos</h3>
+                    <p>12</p>
+                </div>
+
+                <div class="card">
+                    <h3>Entregas hoy</h3>
+                    <p>3</p>
+                </div>
+
+                <div class="card">
+                    <h3>Ingresos</h3>
+                    <p>$2.400.000</p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script type="module" src="./js/dashboard.js"></script>
+</body>
+
+</html>

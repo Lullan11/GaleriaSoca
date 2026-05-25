@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedidos | SOCA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/pedidos.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <div class="logo-container">
+
+                <img src="./assets/logo.png" alt="SOCA">
+
+                <h1>SOCA</h1>
+
+                <p>Galería de Arte</p>
+
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="pedidos.html" class="active">
+                    Pedidos
+                </a>
+
+                <a href="#">
+                    Usuarios
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <main class="content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h2>Pedidos</h2>
+
+                    <p>
+                        Gestiona todos los pedidos
+                    </p>
+
+                </div>
+
+            </header>
+
+            <!-- FORMULARIO -->
+
+            <section class="form-section">
+
+                <form id="pedidoForm">
+
+                    <div class="grid">
+
+                        <input type="text" id="cliente" placeholder="Cliente" required>
+
+                        <input type="text" id="telefono" placeholder="Teléfono">
+
+                        <input type="text" id="tipoArte" placeholder="Tipo de arte" required>
+
+                        <input type="number" id="precio" placeholder="Precio">
+
+                        <input type="number" id="adelanto" placeholder="Adelanto">
+
+                        <input type="date" id="fechaEntrega">
+
+                        <select id="estado">
+
+                            <option value="Pendiente">
+                                Pendiente
+                            </option>
+
+                            <option value="Diseñando">
+                                Diseñando
+                            </option>
+
+                            <option value="Listo">
+                                Listo
+                            </option>
+
+                            <option value="Entregado">
+                                Entregado
+                            </option>
+
+                            <option value="Cancelado">
+                                Cancelado
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <textarea id="descripcion" placeholder="Descripción"></textarea>
+
+                    <textarea id="observaciones" placeholder="Observaciones"></textarea>
+
+                    <label class="upload-label">
+
+                        Referencias e imágenes
+
+                        <input type="file" id="imagenes" multiple accept="image/*">
+
+                    </label>
+
+                    <div id="previewContainer" class="preview-container"></div>
+
+                    <button type="submit">
+                        Guardar pedido
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- LISTA -->
+
+            <section class="pedidos-container" id="pedidosContainer">
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script type="module" src="./js/pedidos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOCA Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/login.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <img src="./assets/logo.png" alt="SOCA">
+
+            <h1>SOCA</h1>
+
+            <p>Galería de Arte</p>
+
+            <form id="loginForm">
+
+                <input type="email" id="email" placeholder="Correo" required>
+
+                <div class="password-container">
+
+                    <input type="password" id="password" placeholder="Contraseña" required>
+
+                    <span id="togglePassword">
+                        👁
+                    </span>
+
+                </div>
+                <button type="submit">
+                    Ingresar
+                </button>
+
+                <div id="message" class="message"></div>
+
+                <a href="recover.html" class="recover-link">
+                    ¿Olvidaste tu contraseña?
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="./js/auth.js"></script>
+
+</body>
+
+</html>
